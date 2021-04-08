@@ -1,0 +1,51 @@
+<html>
+    <head></head>
+    <body>
+        
+        <fieldset style="width:280px">
+            <legend>Calculator Demo Using Arrow Function:</legend>
+                          
+                  Number1:<input type="text" id="pp" /><br><br>
+                  Number2:<input type="text" id="vv" /><br><br>
+                  <button onclick="Operation()">addition</button><br><br>
+                  <button onclick="operation()">substraction</button><br><br>
+                  <button onclick="operation()">multiplication</button><br><br>
+                  <button onclick="operation()">division</button>
+               
+               
+                  </fieldset>
+            <script>
+function Operation(operand) {
+
+
+        var f = parseInt(document.getElementById('pp').value);
+        var s= parseInt(document.getElementById('vv').value);
+        var f1 = parseInt(document.getElementById('pp').value);
+        var s1= parseInt(document.getElementById('vv').value);                           
+        var f2 = parseInt(document.getElementById('pp').value);
+        var s2= parseInt(document.getElementById('vv').value);  
+        var f3 = parseInt(document.getElementById('pp').value);
+        var s3= parseInt(document.getElementById('vv').value);  
+        window.alert(f+s);
+        window.alert(f1-s1);
+        window.alert(f2*s2);
+        window.alert(f3/s3);
+      
+
+switch(operand)
+        {
+
+case 1 :      result = ( (x, y) => {  return x + y; } )( f,s );break;
+case 2 :      result = ( (x, y) => {  return x - y; } )( f1,s1);break;
+case 3 :      result = ( (x, y) => {  return x * y; } )( f2,s2 );break;
+case 4 :      result = ( (x, y) => {  return x / y; } )( f3,s3);break;
+        
+        }                            
+  window.alert(result);
+  console.log(result);
+
+}
+</script>
+                    
+    </body>
+</html>

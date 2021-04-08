@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <script>
+            function add(){
+                var a=document.getElementById('first no').value;
+                var b=document.getElementById('second no').value;
+                var c=parseInt(a)+parseInt(b);
+                console.log(c);
+                window.alert(c);
+            }
+            function sub(){
+                var a1=document.getElementById('s1 no').value;
+                var b1=document.getElementById('s2 no').value;
+                var c=parseInt(a1)-parseInt(b1);
+                console.log(c);
+                window.alert(c);
+            }
+            function mul(){
+                var a2=document.getElementById('m1 no').value;
+                var b2=document.getElementById('m2 no').value;
+                var c=parseInt(a2)*parseInt(b2);
+                console.log(c);
+                window.alert(c);
+            }
+            function div(){
+                var a3=document.getElementById('d1 no').value;
+                var b3=document.getElementById('d2 no').value;
+                var c=parseInt(a3)/parseInt(b3);
+                console.log(c);
+                window.alert(c);
+            }
+            </script>
+            <div>
+             <label>first no</label>
+             <input type="number"id="first no">
+             <br>
+             <label>second no</label>
+             <input type="number"id="second no">
+             <button onclick="add()">click</button>
+            </div>
+            <div>
+         <label>s1 no</label>
+         <input type="number"id="s1 no">
+         <br>
+         <label>s2 no</label>
+         <input type="number"id="s2 no">
+         <button onclick="sub()">click</button>
+        </div>
+         <div>
+     <label>m1 no</label>
+     <input type="number"id="m1 no">
+     <br>
+     <label>m2 no</label>
+     <input type="number"id="m2 no">
+     <button onclick="mul()">click</button>
+    </div>
+     <div>
+ <label>d1 no</label>
+ <input type="number"id="d1 no">
+ <br>
+ <label>d2 no</label>
+ <input type="number"id="d2 no">
+ <button onclick="div()">click</button> 
+</div>  
+    </body>
+</html>

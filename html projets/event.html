@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            <div>
+                <input type="text" id="sr" onkeydown="keydownFunction()">
+            </div>
+            <br>
+            <div>
+            <h1 id="demo" onmouseenter="mouseEnter()" >clickme.</h1>
+        </div>
+        <br>
+        <div>
+            <h1 id="pr" onmouseleave="mouseLeave()">clickme</h1>
+        </div>
+<script>
+    function keydownFunction () {
+  document.getElementById("sr").style.color = "pink";
+}
+document.getElementById("demo").addEventListener("mouseenter",mouseEnter);
+function mouseEnter() {
+  document.getElementById("demo").style.color = "red";
+}
+document.getElementById("pr").addEventListener("mouseleave",mouseLeave);
+function mouseLeave() {
+  document.getElementById("pr").innerHTML = "i had dosa";
+}
+</script>
+        </body>
+    </head>
+</html>
